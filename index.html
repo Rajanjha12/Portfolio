@@ -95,27 +95,17 @@
 
        
         <!-- Contact Section -->
-        <section id="contact" class="section">
-            <div class="contact-container">
-                <h2>Contact Me</h2>
-                <form action="#" method="post">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="Mobile no">Mobile no</label>
-                        <input type="Mobile no" id="MOBILE no" name="Mobile no" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                    </div>
-                    <div class="form-group">
-                        <button type="submit">Send Message</button>
-                    </div>
-                </form>
-            </div>
+        <form action="https://api.web3forms.com/submit" method="POST">
+
+    <input type="hidden" name="access_key" value="12675dd1-647e-4472-bb90-c4338dfb4400">
+
+    <input type="text" name="name" required>
+    <input type="email" name="email" required>
+    <textarea name="message" required></textarea>
+    <input type="hidden" name="redirect" value="https://web3forms.com/success">
+    <button type="submit">Submit Form</button>
+
+</form
         </section>
         <style rel="script.js"></style>
     </main>
