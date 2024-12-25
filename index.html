@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <script>
     function showSection(sectionId) {
         // Hide all sections
@@ -48,6 +49,8 @@
                 <div class="left">
                     <p id="typewriter-text">Web Developer and Software Developer</p>
                     <h1>Hello Everyone, <span>I am Rajan Kumar Jha</span></h1>
+                    <button type="contact-containe.html">Contact me</button>
+                    <button type="resume">Resume</button>
                 </div>
                 <div class="right">
                     <img src="image.jpg" alt="Profile Picture" height="250px" width="250px">
@@ -95,19 +98,33 @@
 
        
         <!-- Contact Section -->
-        <form action="https://api.web3forms.com/submit" method="POST">
+        <section id="contact" class="section">
+             <div class="contact-container">
+               <form action="https://api.web3forms.com/submit" method="POST">
 
-    <input type="hidden" name="access_key" value="12675dd1-647e-4472-bb90-c4338dfb4400">
-
-    <input type="text" name="name" required>
-    <input type="email" name="email" required>
-    <textarea name="message" required></textarea>
-    <input type="hidden" name="redirect" value="https://web3forms.com/success">
-    <button type="submit">Submit Form</button>
-
-</form
+                    <input type="hidden" name="access_key" value="12675dd1-647e-4472-bb90-c4338dfb4400" class="contact-left">
+                <div class="contact-left-title">
+                    <h2>Contact me</h2>
+                    <hr>
+                    <input type="text" name="name" placeholder="your name" class="contact-inputs"required>
+                    <input type="number" name="Mobile no" placeholder="type Mobile no" class="contact-inputs"required>
+                    <input type="message" name="message" placeholder="message" class="contact-inputs"required>
+                    <button type="submit">Submit</button>
+                </div>
+            </div>
         </section>
-        <style rel="script.js"></style>
+
+         
     </main>
+    <footer class="footer">
+        <p id="h3">2024<i class="fas fa-copyright"></i> made by rajanjha</p>
+        <div class="icons">
+            <a href="https://www.linkedin.com/in/rajan-kumar-jha-29310a277/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="Rajan%20kumar%20jha.jpg" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/rajanjha.12official/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/Rajanjha12" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+    </footer>
+    <style src="script.js"></style>
 </body>
 </html>
