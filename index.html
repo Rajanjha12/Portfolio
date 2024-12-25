@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+    function showSection(sectionId) {
+        // Hide all sections
+        const sections = document.querySelectorAll('main > .section');
+        sections.forEach(section => section.style.display = 'none');
+        
+        // Show the selected section
+        const selectedSection = document.getElementById(sectionId);
+        if (selectedSection) {
+            selectedSection.style.display = 'block';
+        }
+    }
+
+    // Show the home section by default
+    document.addEventListener('DOMContentLoaded', () => showSection('home'));
+    </script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="navlist">
+            <div id="logo">
+                <h3><span>P</span>ortfolio</h3>
+            </div>
+            <div class="navbar">
+                <a href="#" onclick="showSection('home')"><h3>Home</h3></a>
+                <a href="#" onclick="showSection('about')"><h3>About me</h3></a>
+                <a href="#" onclick="showSection('activity')"><h3>Activity</h3></a>
+                <a href="https://drive.google.com/file/d/1fbb1OESLcBtjAtL2O6pDy9K_sWI_kMQh/view?usp=drive_link" onclick="showSection('resume')"><h3>Resume</h3></a>
+                <a href="#" onclick="showSection('contact')"><h3>Contact</h3></a>
+                <a href="#" onclick="showSection('skills')"><h3>Skills</h3></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="section">
+            <div class="container">
+                <div class="left">
+                    <p id="typewriter-text">Web Developer and Software Developer</p>
+                    <h1>Hello Everyone, <span>I am Rajan Kumar Jha</span></h1>
+                </div>
+                <div class="right">
+                    <img src="image.jpg" alt="Profile Picture" height="250px" width="250px">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="section">
+            <div class="about-container">
+                <div class="image">
+                    <img src="myimage.jpg" alt="Rajan Kumar Jha" height="300px" width="300px">
+                </div>
+                <div class="about-content">
+                    <h1 class="sub-title"><span>A</span>bout me</h1>
+                    <p class="sub-title-2">I am Rajan Kumar Jha, a 19-year-old B-Tech student at Maharaja Agrasen Institute of Technology with a CGPA of 8.42. I have completed courses in Data Structures and Algorithms, HTML, CSS, JavaScript, SQL, C, and C++ from DevTown and hold certifications from GDSC and DevTown.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="skills-container">
+                <ul>
+                    <li><h3>DSA</h3><span class="bar"><span class="dsa"></span></span></li>
+                    <li><h3>HTML</h3><span class="bar"><span class="html"></span></span></li>
+                    <li><h3>CSS</h3><span class="bar"><span class="css"></span></span></li>
+                    <li><h3>JavaScript</h3><span class="bar"><span class="js"></span></span></li>
+                    <li><h3>C</h3><span class="bar"><span class="c"></span></span></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Activity Section -->
+        <section id="activity" class="section">
+            <div class="activity-container">
+                <ul>
+                    <li><span>60+ problems solved & 50-day badge</span><br>Leetcode</li>
+                    <li><span>50+ problems solved</span><br>GeeksforGeeks</li>
+                    <li><span>C++ Gold Badge and Problem Solving Bronze Badge</span><br>HackerRank</li>
+                    <li><span>30+ problems solved</span><br>Codeforces</li>
+                </ul>
+            </div>
+        </section>
+
+       
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="contact-container">
+                <h2>Contact Me</h2>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <style rel="script.js"></style>
+    </main>
+</body>
+</html>
