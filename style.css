@@ -56,18 +56,31 @@ main {
 .section {
     display: none;
     padding: 20px 0;
+
 }
 
-.container, .about-container, .skills-container, .activity-container, .education-container, .contact-container, .resume-container {
+  #logo h3
+  {
+    color:red;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+  }
+  #logo span{
+    color:yellow
+  }
+  .container{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.container .left, .about-container .about-content {
-    align-items: center;
-    padding: 20px;
+    justify-content: center;
+    padding: 10%;
+  }
+  .right
+  {
+    justify-content: right;
+  }
+.left.right{
+  justify-items: center;
+  margin: 20px;
 }
 
 .container .right, .about-container .image {
@@ -145,47 +158,166 @@ main {
     background-color: #e44d26;
 }
 
-/* Border Box for Skills, Education, and Contact Sections */
-.skills-container li, .education-container li, .contact-container .form-group {
-    border: 1px solid #ddd;
-    padding: 30px;
+.skills-container {
+    border: 2px solid #ddd;
+    padding:15px;
     border-radius: 5px;
-    margin-bottom: 15px;
+    margin-bottom:10px;
     box-sizing: border-box;
 }
-
-.contact-container form {
-    width: 50%;
+.section
+{
+    align-items: center;
+}
+.contact-container
+{
+     
+    border:none;
+     display: flex;
+     align-items: center;
+     justify-content: space-evenly;
+     color: white;
+    padding:50px;
+    border-radius: 10px;
+    width: 30%;
+    background-color: #333;
+    justify-content: center;  
+}
+.contact-inputs
+{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2opx;
+    align-items: flex-start;
+}
+.contact-left{
+    display: flex;
+     flex-direction: column;
+     align-items: start;
+     gap: 20px;
+     justify-content: center;
 }
 
-.contact-container .form-group {
+.contact-left-title {
     display: flex;
     flex-direction: column;
-    margin-bottom: 15px;
+    color:white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
 }
 
-.contact-container label {
-    margin-bottom: 5px;
-}
-
-.contact-container input, .contact-container textarea {
-    padding: 30px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-sizing: border-box;
-    width: 50%;
-}
-
-.contact-container button {
-    padding: 10px 20px;
+.contact-inputs {
+    margin: 10px 0;
+    padding: 10px;
     border: none;
-    background-color: #333;
-    color: white;
     border-radius: 5px;
+}
+
+.contact-inputs[type="text"],
+.contact-inputs[type="number"],
+.contact-inputs textarea {
+    width: 100%;
+}
+
+.contact-inputs textarea {
+    height: 100px;
+    resize: none;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f0a500;
+    color: white;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
-.contact-container button:hover {
-    background-color: #555;
+button:hover {
+    background-color: #cc8400;
+}
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f1f1f1;
+}
+.icons a{
+    margin: 0 10px;
+    color: #000;
+    text-decoration: none;
+    font-size:1.5em;
+}
+.icons a:hover {
+    color: #40545e; /* LinkedIn blue as an example */
+}
+
+@media (max-width: 1200px) {
+    .navlist {
+        flex-direction: column;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar a {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 992px) {
+    .container, .about-container, .skills-container, .activity-container, .education-container, .contact-container, .resume-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container .right, .about-container .image {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navlist {
+        padding: 10px;
+    }
+
+    .navbar a {
+        font-size: 18px;
+    }
+
+    .skills-container {
+        padding: 15px;
+    }
+
+    .contact-container {
+        padding: 15px;
+    }
+
+    .contact-form {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .navlist {
+        padding: 5px;
+    }
+
+    .navbar a {
+        font-size: 16px;
+    }
+
+    .skills-container {
+        padding: 10px;
+    }
+
+    .contact-container {
+        padding: 10px;
+    }
+
+    .contact-form {
+        padding: 10px;
+    }
 }
