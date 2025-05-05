@@ -5,7 +5,7 @@ const AboutMeImage = () => {
       <img
       src="/images/about-me.jpg" // this references public/images/about-me.jpg
       alt="About Me"
-      className="rounded-xl w-[300px] md:w-[400px] shadow-xl"
+      
     />
       </div>
       <div className="h-[500px] w-[250px] bg-orange absolute bottom-[-30px] left-[-30px] rounded-bl-[120px] rounded-tr-[120px] rounded-br-[20px] rounded-tl-[20px] -z-10"></div>
