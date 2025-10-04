@@ -12,12 +12,12 @@ import { fadeIn } from "../../framerMotion/variants";
 
 const skills = [
   {
-    skill: "HTML",
-    icon: FaHtml5,
+    skill: "UI UX",
+    icon: FaSolid,
   },
   {
-    skill: "CSS",
-    icon: FaCss3Alt,
+    skill: "Mongodb",
+    icon: FaMongodb,
   },
   {
     skill: "JavaScript",
@@ -33,8 +33,8 @@ const skills = [
     icon: SiRedux,
   },
   {
-    skill: "NextJS",
-    icon: SiNextdotjs,
+    skill: "ExpressJS",
+    icon: SiExpressjs,
   },
   {
     skill: "TailwindCSS",
