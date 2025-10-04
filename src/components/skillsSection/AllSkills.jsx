@@ -34,7 +34,7 @@ const skills = [
   },
   {
     skill: "ExpressJS",
-    icon:  SiExpressdotjs,
+    icon:  SiNextdotjs,
   },
   {
     skill: "TailwindCSS",
