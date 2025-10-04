@@ -17,7 +17,7 @@ const skills = [
   },
   {
     skill: "Mongodb",
-    icon: SiMongodb,
+    icon: FaCss3Alt,
   },
   {
     skill: "JavaScript",
@@ -34,7 +34,7 @@ const skills = [
   },
   {
     skill: "ExpressJS",
-    icon: SiExpress,
+    icon:  SiExpressdotjs,
   },
   {
     skill: "TailwindCSS",
