@@ -14,7 +14,7 @@ const projects = [
   {
     name: "KitabGhar",
     year: "2025",
-    link: "https://github.com/Rajanjha12/KitabGhar",
+    link: "https://github.com/Rajanjha12/Kitab_Ghar",
     align: "left",
     image: "/images/website-img-2.webp",
   },
