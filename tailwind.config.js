@@ -54,5 +54,20 @@ export default {
       special: ['"Nunito"'],
     },
   },
+  extend: {
+  keyframes: {
+    spin: {
+      to: { transform: 'rotate(360deg)' },
+    },
+    'spin-reverse': {
+      to: { transform: 'rotate(-360deg)' },
+    },
+  },
+  animation: {
+    'spin-slow': 'spin 20s linear infinite',
+    'spin-reverse-slow': 'spin-reverse 25s linear infinite',
+  },
+},
+
   plugins: [],
 };
